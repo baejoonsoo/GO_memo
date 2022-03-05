@@ -3,8 +3,10 @@ package main
 
 import "fmt"
 
-func main() {
-	age := 18
+func lala(words ...int) []int{
+	return words
+}
 
-	fmt.Println(age)
+func main(){
+	fmt.Println(lala(1,2,3,4,5))
 }
