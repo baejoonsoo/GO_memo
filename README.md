@@ -191,7 +191,8 @@ keyword: var(변수), const(상수)
 
 <br>
 
-- if else문 내에서만 사용할 변수를 선언 할 수 있다
+- if else문 내에서만 사용할 변수를 선언 할 수 있다<br>
+  <b>variable expression</b>
 
   ```go
   number:=10
@@ -201,3 +202,9 @@ keyword: var(변수), const(상수)
     fmt.Println("else", newNumber)
   }
   ```
+
+## switch
+
+- variable expression 사용 가능
+- 소괄호 제거
+- 이하생략
