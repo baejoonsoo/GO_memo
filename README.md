@@ -208,3 +208,9 @@ keyword: var(변수), const(상수)
 - variable expression 사용 가능
 - 소괄호 제거
 - 이하생략
+
+<br>
+
+## pointer
+
+C언어와 동일
