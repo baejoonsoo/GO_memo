@@ -16,9 +16,10 @@ import "fmt"
 
 // fmt.Println(total)
 func main(){
-	numbers := [...]int{10,20,30,40,50}
-
-	for i:=0; i<len(numbers); i++{
-		fmt.Println(numbers[i])
+	number:=10
+	if newNumber := number+10; newNumber < 30{
+		fmt.Println("if", newNumber)
+		} else{
+		fmt.Println("else", newNumber)
 	}
 }

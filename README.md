@@ -176,3 +176,28 @@ keyword: var(변수), const(상수)
   // index:  3 number:  40
   // index:  4 number:  50
   ```
+
+## if else
+
+- 기본 문법은 c언어와 유사
+
+  ```go
+  if a>10{
+    // ...code
+  }else{
+    // ...code
+  }
+  ```
+
+<br>
+
+- if else문 내에서만 사용할 변수를 선언 할 수 있다
+
+  ```go
+  number:=10
+  if newNumber := number+10; newNumber < 30 {
+    fmt.Println("if", newNumber)
+  } else{
+    fmt.Println("else", newNumber)
+  }
+  ```
