@@ -48,9 +48,10 @@ keyword: func
 
   ```go
   func nakedReturn1()(name string){
+    // 선언한 변수에 return 할 값을 저장한다
     name="jun"
 
-    // return문 뒤에 변수를 붙히지 않는다
+    // return문 뒤에 변수를 붙히지 않은 채 return한다
     return
   }
   nakedReturn1 output: "jun"
