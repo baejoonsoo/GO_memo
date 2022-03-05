@@ -43,6 +43,27 @@ keyword: func
   }
   ```
 
+- naked return<br>
+  go언어가 값을 return하는 또 다른 방식으로 return 값 타입 지정 시 해당 타입으로 return 될 변수를 만든 뒤 return 할 수 있다
+
+  ```go
+  func nakedReturn1()(name string){
+    name="jun"
+
+    // return문 뒤에 변수를 붙히지 않는다
+    return
+  }
+  nakedReturn1 output: "jun"
+
+  func nakedReturn2() (name string, age int){
+    name = "junsu"
+    age = 18
+
+    return
+  }
+  nakedReturn2 output: "junsu 18"
+  ```
+
 - 무한한 갯수의 parameter들을 받을 수 있다
 
   ```go
