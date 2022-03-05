@@ -3,28 +3,19 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
-
-func lenAndUpper(name string) (lenght int,uppercase string){
-	lenght= len(name)
-	uppercase = strings.ToUpper(name)
-
-	return
+func deferFunc(){
+	fmt.Println("defer func!!")
 }
 
 func nakedReturn()(name string){
+	defer deferFunc()
 	name="jun"
+	fmt.Println("nakedReturn func")
 	return
 }
 
-
 func main() {
-	totalLenght,upperName:=lenAndUpper("goLang")
-
-	fmt.Println(totalLenght,upperName)
-	fmt.Println(lenAndUpper("go"))
-
 	fmt.Println(nakedReturn())
 }

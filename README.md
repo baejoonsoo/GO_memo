@@ -52,6 +52,7 @@ keyword: func
     name="jun"
 
     // return문 뒤에 변수를 붙히지 않은 채 return한다
+    // return문 뒤에 생성한 변수명을 전부 입력한다면 에러는 나지 않음
     return
   }
   nakedReturn1 output: "jun"
@@ -80,6 +81,32 @@ keyword: func
   ```
 
   - <b style="color: pink">...</b> 키워드를 통해 무한한 갯수의 parameter를 받을 수 있으며 array로 저장된다
+
+- defer
+  함수가 return 됐을 때 defer 키워드 뒤에 입력한 함수를 실행한다
+
+  ```go
+  func deferFunc(){
+    fmt.Println("defer func!!")
+  }
+
+  func goFunc()(text string){
+    defer deferFunc()
+    fmt.Println("goFunc")
+
+    text="return string"
+    return
+  }
+
+  func main() {
+    fmt.Println(goFunc())
+  }
+
+  // |output|
+  // goFunc
+  // defer func!!
+  // return string
+  ```
 
 <br>
 
