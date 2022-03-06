@@ -270,3 +270,32 @@ C언어와 동일
       //output : [1 2 3 4 5 6]
     ```
     array의 첫번째 요소부터 6-1번째 요소까지 추출
+
+## map
+
+- C++의 map과 거의 유사함
+
+- 선언 방식
+
+  ```go
+  myMap := map[<key type>]<value type>{key:value...}
+  ```
+
+  ex
+
+  ```go
+  // map 선언
+  myMap := map[string]int{"class":4, "grade":2, "number":5}
+
+  for key,value :=range myMap{
+  	fmt.Printf("key : %s, value : %d\n",key,value)
+  }
+  ```
+
+  output
+
+  ```go
+  key : class, value : 4
+  key : grade, value : 2
+  key : number, value : 5
+  ```
