@@ -235,3 +235,38 @@ C언어와 동일
   // append 함수를 사용해서 배열의 크기를 추가할 수 있다
 
   ```
+
+- Array Sub-slice
+  Array의 일정 부분을 추출할 수 있다
+
+  - [muber : number]
+
+    ```go
+    numbers := []int{1,2,3,4,5,6,7,8,9}
+    fmt.Println(numbers[3:6])
+    //output : [4 5 6]
+    ```
+
+    array의 3번째 요소부터 6-1번째 요소까지 추출
+
+    <br>
+
+  - [number : ]
+
+    ```go
+      numbers := []int{1,2,3,4,5,6,7,8,9}
+      fmt.Println(numbers[3:])
+      //output : [4 5 6,7,8,9]
+    ```
+
+    array의 3번째 요소부터 마지막 요소까지 추출
+
+    <br>
+
+  - [ : number]
+    ```go
+      numbers := []int{1,2,3,4,5,6,7,8,9}
+      fmt.Println(numbers[:6])
+      //output : [1 2 3 4 5 6]
+    ```
+    array의 첫번째 요소부터 6-1번째 요소까지 추출

@@ -21,4 +21,9 @@ func main(){
 	
 	numbers = append(numbers, 4)
 	fmt.Println(numbers, len(numbers))
+
+fmt.Println(numbers[2:4])
+
+test:=[5]int{1,2,3,4,5}
+fmt.Println(test[:3])
 }
