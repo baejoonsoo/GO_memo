@@ -3,10 +3,15 @@ package main
 
 import "fmt"
 
-func main(){
-	myMap := map[string]int{"class":4, "grade":2, "number":5}
+type person struct{
+	name string
+	age int
+	favFood []string
+}
 
-	for key,value :=range myMap{
-		fmt.Printf("key : %s, value : %d\n",key,value)
-	}
+func main(){
+	favFood := []string{"cake","chicken"}
+  jun := person{"junsu",18,favFood}
+
+  fmt.Println(jun)
 }

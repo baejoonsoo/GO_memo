@@ -299,3 +299,38 @@ C언어와 동일
   key : grade, value : 2
   key : number, value : 5
   ```
+
+## struct
+
+- 선언 방법
+  ```go
+  type person struct{
+    name string
+    age int
+    favFood []string
+  }
+  ```
+- struct 변수 생성
+
+  - 방식 1
+
+    ```go
+    favFood := []string{"cake","chicken"}
+    jun := person{"junsu",18,favFood}
+    // struct에 입력한 key값 순서대로 argument를 값으로 넣는다
+
+    fmt.Println(jun)
+
+    // output
+    // {junsu 18 [cake chicken]}
+    ```
+
+  - 방식2
+
+    ```go
+    favFood := []string{"cake","chicken"}
+    jun := person{name:"junsu",age:18, favFood:favFood}
+    // sturct의 key값에 맞춰 넣을 값을 지정한다
+    ```
+
+- constructor가 존재하지 않음
