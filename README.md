@@ -1,4 +1,4 @@
-# GO_momo
+# GO언어 기초 문법 정리
 
 ## function(함수)
 
